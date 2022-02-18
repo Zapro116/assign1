@@ -18,7 +18,7 @@ then
         git remote add "$inp2" "$inp3"
         git push "$inp2" master
     else
-        echo -e "\nEnter name of git repository : nn "
+        echo -e "\nEnter name of git repository : "
         read inp12
         git pull $inp12 master
         git push --set-upstream $inp12 master
