@@ -4,7 +4,7 @@ echo -e "What do you want to do ? \n 1 -> Push into repository\n 2 -> Delete a f
 read q1
 if [ $q1 == 1 ]
 then
-    read -p "Are you pushing into git for a new project ? [Y/N / y/n] " a1
+    read -p "Are you pushing into git for a new project ? [Y/N/y/n] " a1
     git add .
     echo -e "\nEnter Commit Statement : "
     read inp1
