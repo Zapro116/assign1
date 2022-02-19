@@ -24,7 +24,7 @@ then
         git push --set-upstream $inp12 master
     fi
 fi
-if [ $q2 == 2 ]
+if [ $q1 == 2 ]
 then
     echo "Enter filename : "
     read a11
