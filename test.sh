@@ -25,6 +25,7 @@ then
     fi
 fi
 if [ $q1 == 2 ]
+then
     echo "Enter filename : "
     read a11
     git rm -rf $a11
