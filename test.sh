@@ -23,7 +23,9 @@ then
         git pull $inp12 master
         git push --set-upstream $inp12 master
     fi
-else
+fi
+if [ $q2 == 2 ]
+then
     echo "Enter filename : "
     read a11
     git rm -rf $a11
