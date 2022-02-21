@@ -20,8 +20,14 @@ then
     else
         echo -e "\nEnter name of git repository : "
         read inp12
-        git pull $inp12 master
-        git push --set-upstream $inp12 master
+        echo -e "\nEnter the branch name : (default master) "
+        read inp13
+        if [ $inp13 == "" ]
+        then
+            $inp13 = "master"
+        fi
+        git pull $inp12 $inp13
+        git push --set-upstream $inp12 $inp13
     fi
 fi
 if [ $q1 == 2 ]
